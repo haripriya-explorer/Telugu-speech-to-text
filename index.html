@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="img/mic.svg" type="image/svg+xml" />
+    <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime/mini.global.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mandali&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+    <style>
+      [un-cloak] {
+        display: none;
+      }
+      body {
+        font-family: "Sofia Pro";
+      }
+      #textBox { 
+        font-family: monospace;
+      }
+      .mandali-regular {
+        font-family: "Mandali", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="main" flex flex-col items-center un-cloak p-1rem>
+      <!-- <h1 class="mandali-regular" style="color: black; text-align: center;">తెలుగు స్పీచ్ టు టెక్స్ట్ కన్వర్టర్</h1> -->
+      <h1 class="mandali-regular" style="color: black; text-align: center;">తెలుగు వాణిని తెలుగు లిపిగా మార్చుకోండి</h1>
+
+      <div m-3rem style="border: 1px solid black; width: 60%; display: flex; justify-content: center; align-items: center; padding: .75rem; min-height: 150px;" rounded-xl>
+        <img
+          id="loading-icon"
+          src="https://api.iconify.design/line-md/loading-twotone-loop.svg?color=%23000&width=20"
+          align-bottom
+        />
+        <span id="textBox" font-bold color-black text-lg>recognizing...</span>
+      </div>
+      <div flex gap-3>
+        <input
+        id="toggleBut"
+        type="button"
+        value="ప్రారంభించండి"
+        border="solid 1px transparent"
+        inline-block
+        py-2
+        min-w-12rem
+        bg-black
+        color-white
+        text-white
+        rounded-md
+      />
+      <div p-3 rounded-md bg-gray-200 cursor-pointer title="Copy" hover:bg-gray-300 id="clipboard">
+        <img src="img/copy-icon.svg" alt="" w-5 h-5>
+      </div>
+      </div>
+      <!-- <div id="shortcut-label" class="text-#535353 text-sm m-1.5">
+        shortcut: space bar
+      </div> -->
+    </div>
+  </body>
+</html>
