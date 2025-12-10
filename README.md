@@ -10,7 +10,7 @@
 - Responsive and user-friendly UI
 
 💻 How to Use
-1. Open the live site: [Live Demo](https://haripriya-explorer.github.io/telugu-speech-to-text/)  
+1. Open the live site: Your site is live at https://haripriya-explorer.github.io/Telugu-speech-to-text/
 2. Click the **microphone icon** to start speaking in Telugu  
 3. Your speech will appear as text in real time  
 4. Click the **Copy** button to copy the text
